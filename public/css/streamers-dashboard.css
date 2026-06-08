@@ -1,0 +1,347 @@
+/* ==================================================
+   KAISTREAM - STREAMER DASHBOARD
+================================================== */
+
+/* =========================
+   HEADER DASHBOARD
+========================= */
+
+.dashboard-header {
+    background: linear-gradient(
+        135deg,
+        rgba(99,102,241,.25),
+        rgba(139,92,246,.20),
+        rgba(236,72,153,.15)
+    );
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 25px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.20);
+}
+
+.dashboard-header h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.dashboard-header p {
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* =========================
+   PROFILE
+========================= */
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.profile-img {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 3px solid #8b5cf6;
+
+    box-shadow:
+        0 0 15px rgba(139,92,246,.4);
+}
+
+.user-profile h6 {
+    color: white;
+    margin: 0;
+    font-weight: 600;
+}
+
+.user-profile span {
+    color: #94a3b8;
+    font-size: 13px;
+}
+
+/* =========================
+   STATS CARD
+========================= */
+
+.stats-card {
+    background: rgba(15,23,42,.75);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    height: 100%;
+
+    backdrop-filter: blur(12px);
+
+    transition: all .3s ease;
+}
+
+.stats-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: rgba(139,92,246,.5);
+
+    box-shadow:
+        0 10px 30px rgba(139,92,246,.15);
+}
+
+.stats-icon {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-size: 22px;
+
+    flex-shrink: 0;
+}
+
+.stats-card span {
+    display: block;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+.stats-card h3 {
+    color: white;
+    margin: 5px 0 0;
+    font-weight: 700;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.table-card {
+    background: rgba(15,23,42,.75);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15);
+}
+
+.table-header {
+    margin-bottom: 15px;
+}
+
+.table-header h4 {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* =========================
+   DONATUR
+========================= */
+
+.donatur-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.donatur-avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 12px rgba(139,92,246,.4);
+}
+
+/* =========================
+   NOMINAL
+========================= */
+
+.amount {
+    color: #22c55e;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.dashboard-table {
+    width: 100%;
+    color: white !important;
+    margin-bottom: 0 !important;
+}
+
+.dashboard-table thead th {
+    color: #94a3b8 !important;
+
+    border-top: none !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.08) !important;
+
+    font-weight: 600;
+
+    padding: 16px;
+}
+
+.dashboard-table tbody td {
+
+    padding: 18px 16px;
+
+    border-color: rgba(255,255,255,.05) !important;
+
+    vertical-align: middle;
+
+    color: white !important;
+}
+
+.dashboard-table tbody tr {
+
+    transition: .3s;
+
+    background: rgba(255,255,255,.02);
+}
+
+.dashboard-table tbody tr:hover {
+
+    background: rgba(139,92,246,.08) !important;
+}
+
+/* FORCE BOOTSTRAP OVERRIDE */
+
+.table > :not(caption) > * > * {
+    background-color: transparent !important;
+    color: white !important;
+}
+
+.dashboard-table thead th {
+    background: transparent !important;
+}
+
+.dashboard-table tbody td {
+    background: transparent !important;
+}
+
+/* =========================
+   EMPTY STATE
+========================= */
+
+.empty-state {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.empty-state i {
+    font-size: 55px;
+    color: #8b5cf6;
+    margin-bottom: 15px;
+}
+
+.empty-state h5 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #94a3b8;
+    margin-bottom: 0;
+}
+
+/* =========================
+   SCROLLBAR
+========================= */
+
+.table-responsive::-webkit-scrollbar {
+    height: 8px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: rgba(255,255,255,.05);
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: rgba(139,92,246,.5);
+    border-radius: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+    .dashboard-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .stats-card {
+        padding: 20px;
+    }
+
+    .dashboard-table {
+        min-width: 800px;
+    }
+
+    .table-card {
+        padding: 15px;
+    }
+
+}

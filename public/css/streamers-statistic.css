@@ -1,0 +1,292 @@
+/* ==================================================
+   STREAMER STATISTICS
+================================================== */
+
+/* =========================
+   HEADER
+========================= */
+
+.statistics-header {
+    background: linear-gradient(
+        135deg,
+        rgba(99,102,241,.25),
+        rgba(139,92,246,.20),
+        rgba(236,72,153,.15)
+    );
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    margin-bottom: 25px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15);
+}
+
+.statistics-header h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.statistics-header p {
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* =========================
+   STATS CARD
+========================= */
+
+.stats-card {
+    background: rgba(15,23,42,.75);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 24px;
+
+    height: 100%;
+
+    backdrop-filter: blur(12px);
+
+    transition: all .3s ease;
+}
+
+.stats-card:hover {
+
+    transform: translateY(-5px);
+
+    border-color: rgba(139,92,246,.4);
+
+    box-shadow:
+        0 10px 30px rgba(139,92,246,.15);
+}
+
+.stats-icon {
+    width: 60px;
+    height: 60px;
+
+    border-radius: 18px;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+
+    font-size: 24px;
+
+    margin-bottom: 18px;
+}
+
+.stats-card h6 {
+    color: #94a3b8;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.stats-card h3 {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* =========================
+   TABLE CARD
+========================= */
+
+.top-donatur-card {
+    background: rgba(15,23,42,.75);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15);
+}
+
+.top-donatur-card h4 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   DONATUR
+========================= */
+
+.donatur-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.donatur-avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: white;
+    font-weight: 700;
+
+    box-shadow:
+        0 0 12px rgba(139,92,246,.4);
+}
+
+.donatur-name {
+    color: white;
+    font-weight: 600;
+}
+
+.guest-badge {
+    display: inline-block;
+
+    padding: 3px 10px;
+
+    border-radius: 999px;
+
+    font-size: 11px;
+
+    background: rgba(148,163,184,.15);
+
+    color: #94a3b8;
+
+    margin-left: 8px;
+}
+
+/* =========================
+   AMOUNT
+========================= */
+
+.amount {
+    color: #22c55e;
+    font-weight: 800;
+    font-size: 16px;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+.statistics-table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.statistics-table thead th {
+
+    color: #94a3b8 !important;
+
+    border-top: none !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.08) !important;
+
+    font-weight: 600;
+
+    padding: 16px;
+}
+
+.statistics-table tbody td {
+
+    color: white !important;
+
+    padding: 18px 16px;
+
+    border-color: rgba(255,255,255,.05) !important;
+
+    vertical-align: middle;
+}
+
+.statistics-table tbody tr {
+
+    transition: .3s;
+}
+
+.statistics-table tbody tr:hover {
+
+    background: rgba(139,92,246,.08) !important;
+}
+
+/* Bootstrap override */
+
+.table > :not(caption) > * > * {
+    background: transparent !important;
+}
+
+.statistics-table thead th {
+    background: transparent !important;
+}
+
+.statistics-table tbody td {
+    background: transparent !important;
+}
+
+/* =========================
+   EMPTY
+========================= */
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.empty-state i {
+    font-size: 55px;
+    color: #8b5cf6;
+    margin-bottom: 15px;
+}
+
+.empty-state h5 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width:768px){
+
+    .statistics-table{
+        min-width:700px;
+    }
+
+    .statistics-header{
+        padding:20px;
+    }
+
+}

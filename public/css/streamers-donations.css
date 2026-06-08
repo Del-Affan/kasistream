@@ -1,0 +1,256 @@
+/* ==================================
+   HEADER
+================================== */
+
+.donation-header {
+    background: linear-gradient(
+        135deg,
+        rgba(99,102,241,.25),
+        rgba(139,92,246,.20),
+        rgba(236,72,153,.15)
+    );
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 24px;
+
+    padding: 28px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15);
+}
+
+.donation-header h2 {
+    color: white;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.donation-header p {
+    color: #cbd5e1;
+    margin: 0;
+}
+
+/* ==================================
+   CARD
+================================== */
+
+.donation-card {
+    background: rgba(15,23,42,.75);
+
+    border: 1px solid rgba(255,255,255,.08);
+
+    border-radius: 20px;
+
+    padding: 20px;
+
+    backdrop-filter: blur(12px);
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.15);
+}
+
+/* ==================================
+   TABLE HEADER
+================================== */
+
+.table-header {
+    margin-bottom: 15px;
+}
+
+.table-header h4 {
+    color: white;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* ==================================
+   DONATUR
+================================== */
+
+.donatur-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.donatur-avatar {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    color: white;
+
+    font-weight: 700;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow:
+        0 0 15px rgba(139,92,246,.35);
+}
+
+.donatur-name {
+    color: white;
+    font-weight: 600;
+}
+
+.guest-badge {
+    display: inline-block;
+
+    margin-top: 4px;
+
+    padding: 3px 10px;
+
+    border-radius: 999px;
+
+    background: rgba(148,163,184,.15);
+
+    color: #94a3b8;
+
+    font-size: 11px;
+}
+
+/* ==================================
+   NOMINAL
+================================== */
+
+.amount {
+    color: #22c55e;
+    font-weight: 800;
+    font-size: 17px;
+}
+
+/* ==================================
+   TABLE
+================================== */
+
+.donation-table {
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.donation-table thead th {
+    color: #94a3b8 !important;
+
+    border-top: none !important;
+
+    border-bottom: 1px solid rgba(255,255,255,.08) !important;
+
+    padding: 16px;
+
+    font-weight: 600;
+}
+
+.donation-table tbody td {
+    color: white !important;
+
+    padding: 18px 16px;
+
+    border-color: rgba(255,255,255,.05) !important;
+
+    vertical-align: middle;
+}
+
+.donation-table tbody tr {
+    transition: .3s;
+}
+
+.donation-table tbody tr:hover {
+    background: rgba(139,92,246,.08) !important;
+}
+
+/* FORCE BOOTSTRAP OVERRIDE */
+
+.table > :not(caption) > * > * {
+    background: transparent !important;
+}
+
+.donation-table thead th {
+    background: transparent !important;
+}
+
+.donation-table tbody td {
+    background: transparent !important;
+}
+
+/* ==================================
+   EMPTY STATE
+================================== */
+
+.empty-state {
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.empty-state i {
+    font-size: 60px;
+    color: #8b5cf6;
+    margin-bottom: 15px;
+}
+
+.empty-state h5 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.empty-state p {
+    color: #94a3b8;
+    margin: 0;
+}
+
+/* ==================================
+   PAGINATION
+================================== */
+
+.pagination {
+    justify-content: center;
+}
+
+.page-link {
+    background: rgba(30,41,59,.9);
+    border: 1px solid rgba(255,255,255,.08);
+    color: white;
+}
+
+.page-link:hover {
+    background: #8b5cf6;
+    border-color: #8b5cf6;
+    color: white;
+}
+
+.page-item.active .page-link {
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #ec4899
+    );
+
+    border-color: transparent;
+}
+
+/* ==================================
+   MOBILE
+================================== */
+
+@media (max-width: 768px) {
+
+    .donation-header {
+        padding: 20px;
+    }
+
+    .donation-table {
+        min-width: 850px;
+    }
+
+}
