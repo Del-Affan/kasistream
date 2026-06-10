@@ -247,7 +247,7 @@ body{
     max-width:800px;
 
     left:-50px;      /* geser kanan-kiri */
-    top:60px;       /* geser atas-bawah */
+    top:30px;       /* geser atas-bawah */
 
     animation:
     floatLogo 5s ease-in-out infinite;
