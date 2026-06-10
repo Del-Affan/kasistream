@@ -244,7 +244,7 @@ body{
 
     width:130%;
 
-    max-width:800px;
+    max-width:400px;
 
     left:-50px;      /* geser kanan-kiri */
     top:-50px;       /* geser atas-bawah */
