@@ -132,6 +132,8 @@ body{
     align-items:center;
 
     position:relative;
+
+    padding-top:100px;
 }
 
 .hero::before{
@@ -378,20 +380,89 @@ footer{
 
 @media(max-width:768px){
 
-    .hero-title{
-
-        font-size:42px;
-    }
-
     .hero{
 
         text-align:center;
+
+        padding-top:130px;
+
+        padding-bottom:60px;
+    }
+
+    .hero-title{
+
+        font-size:42px;
+
+        line-height:1.2;
+    }
+
+    .hero-subtitle{
+
+        font-size:18px;
     }
 
     .hero-logo{
 
-        margin-top:50px;
+        width:100%;
+
+        max-width:400px;
+
+        left:0;
+
+        top:0;
+
+        margin-top:40px;
     }
+
+    .hero-btn{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:12px;
+    }
+
+    .btn-guest{
+
+        margin-left:0;
+    }
+
+    .hero-stats{
+
+        text-align:center;
+    }
+}
+
+/* HERO STATS */
+
+.hero-stats{
+
+    margin-top:50px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    background:
+    rgba(255,255,255,.04);
+
+    border:
+    1px solid rgba(255,255,255,.08);
+
+    backdrop-filter:blur(10px);
+}
+
+.hero-stats h3{
+
+    font-weight:800;
+
+    margin-bottom:5px;
+}
+
+.hero-stats small{
+
+    color:#94a3b8;
 }
 
 </style>
@@ -558,7 +629,7 @@ footer{
 
                 </div>
 
-                <div class="mt-5">
+                <div class="hero-stats mt-5">
 
                     <div class="row">
 
