@@ -41,6 +41,18 @@
 
                 <div class="card-body">
 
+                    <div class="streamer-info">
+
+    <strong>🚀 Mulai Karir Streaming Anda</strong>
+
+    <br><br>
+
+    Lengkapi profil streamer untuk menerima donasi,
+    menampilkan jadwal live, dan membangun komunitas
+    penggemar Anda di KAistream.
+
+</div>
+
                     <form action="/become-streamer" method="POST">
 
                         @csrf
