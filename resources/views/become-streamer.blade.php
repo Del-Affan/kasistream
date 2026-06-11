@@ -18,9 +18,9 @@
         href="{{ asset('css/kasistream.css') }}"
     >
         <link
-        rel="stylesheet"
-        href="{{ asset('css/become-streamer.css') }}"
-    >
+    rel="stylesheet"
+    href="{{ asset('css/become-streamer.css?v=' . time()) }}"
+>
 
 </head>
 <body>
