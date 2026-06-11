@@ -156,11 +156,17 @@ body{
 
 .hero-title{
 
-    font-size:70px;
+    font-size:60px;
 
     font-weight:900;
 
-    line-height:1.1;
+    line-height:1.05;
+
+    letter-spacing:-2px;
+
+    color:white;
+
+    margin-bottom:25px;
 }
 
 .hero-title span{
@@ -244,10 +250,10 @@ body{
 
     width:130%;
 
-    max-width:400px;
+    max-width:600px;
 
-    left:-50px;      /* geser kanan-kiri */
-    top:-50px;       /* geser atas-bawah */
+    left:60px;      /* geser kanan-kiri */
+    top:-10px;       /* geser atas-bawah */
 
     animation:
     floatLogo 5s ease-in-out infinite;
