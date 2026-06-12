@@ -422,6 +422,8 @@
 const userBalance =
     {{ auth()->user()->balance ?? 0 }};
 
+const adminFee = 1500;
+
 </script>
 
 @endauth
@@ -444,7 +446,10 @@ function updateTotal()
             extra += parseInt(item.value);
         });
 
-    let total = nominal + extra;
+    let total =
+    nominal +
+    extra +
+    adminFee;
 
     document.getElementById('totalText').innerHTML =
         'Rp ' +
@@ -503,7 +508,9 @@ function cekSaldo()
         });
 
     let total =
-        nominal + extra;
+    nominal +
+    extra +
+    adminFee;
 
     @auth
 
